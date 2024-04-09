@@ -1,41 +1,33 @@
-body
-{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-header
-{
+header {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
-
-.container
-{
-    max-width: 800px;
+.container {
+    max-width: 1250px;
     margin: 20px auto;
     padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Layout de grade com duas colunas */
+    grid-gap: 20px; /* Espaçamento entre os livros */
 }
-
-.livro
-{
-    border: 1px solid #ccc;
+.livro {
+    border: 2px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
     border-radius: 10px; /* Borda arredondada */
-    display: flex; /* Alinha os elementos lado a lado */
+    display: flex; /* Alinha a capa e as informações do livro lado a lado */
 }
-
-.livro img
-{
+.livro img {
     max-width: 100px; /* Defina o tamanho máximo da imagem */
     margin-right: 20px; /* Espaçamento entre a imagem e as informações do livro */
+    border-radius: 6px; /* Borda arredondada */
 }
-
-.info-livro
-{
+.info-livro {
     flex-grow: 1; /* Permite que as informações do livro ocupem todo o espaço restante */
 }
