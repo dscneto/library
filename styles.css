@@ -1,0 +1,41 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.livro
+{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Borda arredondada */
+    display: flex; /* Alinha os elementos lado a lado */
+}
+
+.livro img
+{
+    max-width: 100px; /* Defina o tamanho máximo da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e as informações do livro */
+}
+
+.info-livro
+{
+    flex-grow: 1; /* Permite que as informações do livro ocupem todo o espaço restante */
+}
